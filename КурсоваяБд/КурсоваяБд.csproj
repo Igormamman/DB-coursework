@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97DBB884-C62C-475C-BF1D-DD6D396F0CEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>КурсоваяБд</RootNamespace>
+    <AssemblyName>КурсоваяБд</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration.Designer.cs">
+      <DependentUpon>Administration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Amount_of_students_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Amount_of_students_Form.Designer.cs">
+      <DependentUpon>Amount_of_students_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BD_Sportivnaya_shkolaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_Sportivnaya_shkolaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Groups_Info_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Groups_Info_Form.Designer.cs">
+      <DependentUpon>Groups_Info_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="group_formA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="group_formA.Designer.cs">
+      <DependentUpon>group_formA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kind_of_sport_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kind_of_sport_Form.Designer.cs">
+      <DependentUpon>Kind_of_sport_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kind_of_sport_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kind_of_sport_report.Designer.cs">
+      <DependentUpon>Kind_of_sport_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Place_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Place_Form.Designer.cs">
+      <DependentUpon>Place_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Place_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Place_report.Designer.cs">
+      <DependentUpon>Place_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScheduleFormA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleFormA.Designer.cs">
+      <DependentUpon>ScheduleFormA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleStudent.Designer.cs">
+      <DependentUpon>ScheduleStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule_A.Designer.cs">
+      <DependentUpon>Schedule_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_day%27s_scheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_day%27s_scheduleForm.Designer.cs">
+      <DependentUpon>search_day%27s_scheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_schedule_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_schedule_Form.Designer.cs">
+      <DependentUpon>Search_schedule_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_student_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_student_Form.Designer.cs">
+      <DependentUpon>Search_student_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students.Designer.cs">
+      <DependentUpon>Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsA.Designer.cs">
+      <DependentUpon>StudentsA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="students_formA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="students_formA.Designer.cs">
+      <DependentUpon>students_formA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainers.Designer.cs">
+      <DependentUpon>Trainers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainersA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainersA.Designer.cs">
+      <DependentUpon>TrainersA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainers_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainers_report.Designer.cs">
+      <DependentUpon>Trainers_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainer_Sc_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainer_Sc_Form.Designer.cs">
+      <DependentUpon>Trainer_Sc_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="БД_Спортивная_школаDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>БД_Спортивная_школаDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administration.resx">
+      <DependentUpon>Administration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Amount_of_students_Form.resx">
+      <DependentUpon>Amount_of_students_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Groups_Info_Form.resx">
+      <DependentUpon>Groups_Info_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group_formA.resx">
+      <DependentUpon>group_formA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kind_of_sport_Form.resx">
+      <DependentUpon>Kind_of_sport_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kind_of_sport_report.resx">
+      <DependentUpon>Kind_of_sport_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Place_Form.resx">
+      <DependentUpon>Place_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Place_report.resx">
+      <DependentUpon>Place_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ScheduleFormA.resx">
+      <DependentUpon>ScheduleFormA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleStudent.resx">
+      <DependentUpon>ScheduleStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule_A.resx">
+      <DependentUpon>Schedule_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_day%27s_scheduleForm.resx">
+      <DependentUpon>search_day%27s_scheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_schedule_Form.resx">
+      <DependentUpon>Search_schedule_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_student_Form.resx">
+      <DependentUpon>Search_student_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students.resx">
+      <DependentUpon>Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsA.resx">
+      <DependentUpon>StudentsA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="students_formA.resx">
+      <DependentUpon>students_formA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainers.resx">
+      <DependentUpon>Trainers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainersA.resx">
+      <DependentUpon>TrainersA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainers_report.resx">
+      <DependentUpon>Trainers_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainer_Sc_Form.resx">
+      <DependentUpon>Trainer_Sc_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BD_Sportivnaya_shkolaDataSet.xsc">
+      <DependentUpon>BD_Sportivnaya_shkolaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Sportivnaya_shkolaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_Sportivnaya_shkolaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_Sportivnaya_shkolaDataSet.xss">
+      <DependentUpon>BD_Sportivnaya_shkolaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="БД_Спортивная_школаDataSet.xsc">
+      <DependentUpon>БД_Спортивная_школаDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="БД_Спортивная_школаDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>БД_Спортивная_школаDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="БД_Спортивная_школаDataSet.xss">
+      <DependentUpon>БД_Спортивная_школаDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BD_Sportivnaya_shkola.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
